@@ -13,15 +13,19 @@
         
         /* Header Section */
         .header {
-            height: 45rem;
+            height: 55.1rem;
             text-align: center;
             padding: 60px 20px 40px;
             background: #008060;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-bottom-left-radius: 80px 40px;
-            border-bottom-right-radius: 80px 20px;
+            position: relative;
         }
+
+        svg {
+          position: absolute;
+          top:55rem;
+          z-index: -1;
+        }
+
 
         .logo {
             margin-top: -30px;
@@ -29,16 +33,19 @@
         }
         
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 3.1rem;
             font-weight: 700;
             margin-bottom: 16px;
             color: #ffffff;
         }
         
         .header p {
-            font-size: 1.125rem;
+            font-size: 1.6rem;
             color: #ffffff;
             margin-bottom: 40px;
+        }
+        .header .form-note {
+          font-size: 0.8rem;
         }
         
         /* Email Form */
@@ -94,13 +101,13 @@
             justify-content: center;
             gap: 30px;
             padding: 60px 20px;
-            margin-top: 20rem
+            margin-top: 17rem
         }
         
         .step {
             flex: 1;
-            min-width: 280px;
-            max-width: 350px;
+            min-width: 270px;
+            max-width: 320px;
         }
 
         .step .icon {
@@ -148,13 +155,20 @@
 
         .brand_logos{
             width: 100%;
+            
+        }
+
+        .brand_logos img {
+          width: 100%;
+          position: relative;
+          right: 2.8rem;
         }
         
         /* Testimonial */
         .testimonial {
             text-align: center;
             padding: 60px 20px;
-            background-color: #f6f9fc;
+            background-color: white;
         }
         
         .quote {
@@ -202,7 +216,7 @@
         /* FAQ Section */
         .faq {
             padding: 60px 20px;
-            background-color: #f9fafb;
+            background-color: #fbf9fa;
         }
         
         .faq-title {
@@ -210,6 +224,7 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 40px;
+            color: #006e52;
         }
         
         .faq-item {
@@ -238,6 +253,7 @@
             text-align: center;
             color: #637381;
             font-size: 0.875rem;
+            background-color: white;
             
         }
         
@@ -263,6 +279,10 @@
     padding: 40px 15px 30px;
     border-bottom-left-radius: 60px 30px;
     border-bottom-right-radius: 60px 15px;
+  }
+
+  svg {
+    display: none;
   }
 
   .header h1 {
