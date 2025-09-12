@@ -1,385 +1,533 @@
-      * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: #212b36;
-            line-height: 1.5;
-            background-color: #ffffff;
-        }
-        
-        /* Header Section */
-        .header {
-            height: 55.1rem;
-            text-align: center;
-            padding: 60px 20px 40px;
-            background: #008060;
-            position: relative;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        svg {
-          position: absolute;
-          top:55rem;
-          z-index: -1;
-        }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #212b36;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
 
+/* Header Section */
+.header {
+    height: 55.1rem;
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: #008060;
+    position: relative;
+}
 
-        .logo {
-            margin-top: -30px;
-            margin-bottom: 20px
-        }
-        
-        .header h1 {
-            font-size: 3.1rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: #ffffff;
-        }
-        
-        .header p {
-            font-size: 1.6rem;
-            color: #ffffff;
-            margin-bottom: 40px;
-        }
-        .header .form-note {
-          font-size: 0.8rem;
-        }
-        
-        /* Email Form */
-        .email-form {
-          display: flex;
-          justify-content: space-between;
-            max-width: 500px;
-            margin: 0 auto 20px;
-        }
-        
-        .email-input {
-            width: 60%;
-            padding: 16px;
-            border: 1px solid #c4cdd5;
-            border-radius: 4px;
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-        
-        .btn {
-            background-color: #05040400;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            width: 38%;
-            transition: background-color 0.2s;
-        }
-        
-        .btn:hover {
-            background-color: #006e52;
-        }
-        
-        .form-note {
-            /* font-size: 0.675rem; */
-            color: #ffffff;
-            text-align: center;
-            margin-top: 16px;
-        }
+svg {
+    position: absolute;
+    top: 55rem;
+    z-index: -1;
+}
 
-        .Hero {
-            width: 50%; 
-            height: 600px;
-        }
-        
-        /* Steps Section */
-        
-        .steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            padding: 60px 20px;
-            margin-top: 17rem
-        }
-        
-        .step {
-            flex: 1;
-            min-width: 270px;
-            max-width: 320px;
-        }
+.logo {
+    margin-top: -30px;
+    margin-bottom: 20px
+}
 
-        .step .icon {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 7px;
-            filter:  invert(48%) sepia(87%) saturate(745%) hue-rotate(85deg)
-        }
-        
-        .step-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: #000;
-        }
+.header h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
 
-        .step-title img {
-            width: 21px;
-            height: 21px;
-            position: relative;
-            top: 3px;
-        }
-        
-        .step-description {
-            color: #637381;
-        }
-        
-        /* Brand Showcase */
-        .brands {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            padding: 40px 20px;
-            background-color: #f9fafb;
-            border-bottom: 1px solid #e1e5e9;
+.header p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
 
-        }
-/*         
-        .brand {
-            text-align: center;
-            font-weight: 600;
-            font-size: 1.125rem;
-        } */
+.header .form-note {
+    font-size: 0.8rem;
+}
 
-        .brand_logos{
-            width: 100%;
-            
-        }
+/* Email Form */
+.email-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
 
-        .brand_logos img {
-          width: 100%;
-          position: relative;
-          right: 2.8rem;
-        }
-        
-        /* Testimonial */
-        .testimonial {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: white;
-        }
-        
-        .quote {
-            font-size: 1.5rem;
-            font-weight: 400;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #212b36;
-        }
-        
-        .author {
-            font-weight: 600;
-        }
-        
-        .position {
-            color: #637381;
-        }
-        
-
-        .testimonial-btn {
-            background-color: #008060;
-            color: white;
-            border: 3px;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            width: 20%;
-            height: 60px;
-            z-index: -1;
-            text-align: center;
-            transition: background-color 0.2s;
-            margin-top: 40px;
-
-            
-        }
-
-        .testimonial-btn:hover{
-            background-color: #080808;
-        }
-
-
-        
-        
-        /* FAQ Section */
-        .faq {
-            padding: 60px 20px;
-            background-color: #fbf9fa;
-        }
-        
-        .faq-title {
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 40px;
-            color: #006e52;
-        }
-        
-        .faq-item {
-            border-bottom: 1px solid #e1e5e9;
-            padding: 20px 0;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        
-        .faq-toggle {
-            font-size: 1.5rem;
-            color: #637381;
-        }
-        
-        /* Footer */
-        .footer {
-            padding: 40px 20px;
-            text-align: center;
-            color: #637381;
-            font-size: 0.875rem;
-            background-color: white;
-            
-        }
-        
-        .footer-links {
-            margin-top: 16px;
-            margin-left: 50rem;
-        }
-        
-        .footer-link {
-            color: #259b4c;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        .footer-link:hover {
-            text-decoration: underline;
-        }
-        
-       /* Tablet Devices (768px and below) */
-@media (max-width: 768px) {
-  .header {
-    height: auto;
-    padding: 40px 15px 30px;
-    border-bottom-left-radius: 60px 30px;
-    border-bottom-right-radius: 60px 15px;
-  }
-
-  svg {
-    display: none;
-  }
-
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .header p {
-    font-size: 1rem;
-  }
-
-  .email-form {
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 90%;
-  }
-
-  .email-input,
-  .btn {
-    width: 100%;
-    margin-bottom: 12px;
-  }
-
-  .Hero {
-    width: 100%;
-    height: auto;
-  }
-
-  .steps {
-    flex-direction: column;
-    margin-top: 10rem;
-  }
-
-  .step {
-    max-width: 100%;
-  }
-
-  .quote {
-    font-size: 1.25rem;
-    padding: 0 10px;
-  }
-
-  .testimonial-btn {
+.email-input {
     width: 60%;
-  }
+    padding: 16px;
+    border: 1px solid #c4cdd5;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
 
-  .faq-item {
-    padding: 15px 10px;
-  }
+.btn {
+    background-color: #05040400;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 38%;
+    transition: background-color 0.2s;
+}
 
-  .footer-links {
-    margin-left: 0;
-    margin-top: 20px;
-  }
+.btn:hover {
+    background-color: #006e52;
+}
+
+.form-note {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.Hero {
+    width: 50%;
+    height: 600px;
+}
+
+/* Steps Section */
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    margin-top: 17rem
+}
+
+.step {
+    flex: 1;
+    min-width: 270px;
+    max-width: 320px;
+}
+
+.step .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+    filter: invert(48%) sepia(87%) saturate(745%) hue-rotate(85deg)
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.step-title img {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 3px;
+}
+
+.step-description {
+    color: #637381;
+}
+
+/* Brand Showcase */
+/* .brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e1e5e9;
+} */
+
+.brand_logos {
+    width: 100%;
+}
+
+.brand_logos img {
+    width: 100%;
+    position: relative;
+    right: 2.8rem;
+}
+
+/* Testimonial */
+.testimonial {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #212b36;
+}
+
+.author {
+    font-weight: 600;
+}
+
+.position {
+    color: #637381;
+}
+
+.testimonial-btn {
+    background-color: #008060;
+    color: white;
+    border: 3px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 20%;
+    height: 60px;
+    z-index: -1;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-top: 40px;
+}
+
+.testimonial-btn:hover {
+    background-color: #080808;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    background-color: #fbf9fa;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #006e52;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e1e5e9;
+    padding: 20px 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: #637381;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: #637381;
+    font-size: 0.875rem;
+    background-color: white;
+}
+
+.footer-links {
+    margin-top: 16px;
+    margin-left: 50rem;
+}
+
+.footer-link {
+    color: #259b4c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Desktop Responsiveness - Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .header {
+        height: 60rem;
+        padding: 80px 20px 60px;
+    }
+    
+    svg {
+        top: 60rem;
+    }
+    
+    .header h1 {
+        font-size: 4rem;
+    }
+    
+    .header p {
+        font-size: 1.8rem;
+    }
+    
+    .email-form {
+        max-width: 600px;
+    }
+    
+    .Hero {
+        width: 50%;
+        height: 700px;
+    }
+    
+    .steps {
+        max-width: 1200px;
+        margin: 20rem auto 0;
+    }
+    
+    .step {
+        max-width: 350px;
+    }
+
+    .brand_logos {
+    width: 100%;
+}
+.brand_logos img {
+    width: 100%;
+    position: relative;
+    right: 2.8rem;
+}
+    
+    /* .brands {
+        max-width: 1200px;
+        margin: 0 auto;
+    } */
+    
+    .testimonial {
+        padding: 80px 20px;
+    }
+    
+    .quote {
+        font-size: 1.8rem;
+        max-width: 900px;
+    }
+    
+    .testimonial-btn {
+        width: 15%;
+    }
+    
+    .faq {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-links {
+        margin-left: 65rem;
+    }
+}
+
+/* Desktop Responsiveness - Medium Screens (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .header {
+        height: 58rem;
+    }
+    
+    svg {
+        top: 58rem;
+    }
+    
+    .header h1 {
+        font-size: 3.7rem;
+    }
+    
+    .header p {
+        font-size: 1.6rem;
+    }
+    
+    .Hero {
+        width: 60%;
+        height: 650px;
+    }
+    
+    .steps {
+        max-width: 1300px;
+        margin: 18rem auto 0;
+    }
+
+    .brand_logos {
+    width: 100%;
+}
+
+.brand_logos img {
+    width: 100%;
+    position: relative;
+    right: 2.8rem;
+}
+    
+    .testimonial-btn {
+        width: 25%;
+    }
+    
+    .footer-links {
+        margin-left: 55rem;
+    }
+}
+
+/* Desktop Responsiveness - Small Screens (769px to 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .header {
+        height: 56rem;
+    }
+    
+    svg {
+        top: 56rem;
+    }
+    
+    .header h1 {
+        font-size: 3rem;
+    }
+    
+    .header p {
+        font-size: 1.4rem;
+    }
+    
+    .Hero {
+        width: 65%;
+        height: 600px;
+    }
+    
+    .steps {
+        margin-top: 15rem;
+    }
+
+    .brand_logos {
+    width: 100%;
+}
+    
+    .testimonial-btn {
+        width: 30%;
+    }
+    
+    .footer-links {
+        margin-left: 40rem;
+    }
+}
+
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 40px 15px 30px;
+        border-bottom-left-radius: 60px 30px;
+        border-bottom-right-radius: 60px 15px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .email-form {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 90%;
+    }
+
+    .email-input,
+    .btn {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .Hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .steps {
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .step {
+        max-width: 100%;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+        padding: 0 10px;
+    }
+
+    .brand_logos {
+    width: 100%;
+}
+
+    .testimonial-btn {
+        width: 60%;
+    }
+
+    .faq-item {
+        padding: 15px 10px;
+    }
+
+    .footer-links {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 /* Mobile Devices (480px and below) */
 @media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.75rem;
-  }
+    .header h1 {
+        font-size: 1.75rem;
+    }
 
-  .header p {
-    font-size: 0.95rem;
-  }
+    .header p {
+        font-size: 0.95rem;
+    }
 
-  .email-input,
-  .btn {
-    font-size: 14px;
-    padding: 12px;
-  }
+    .email-input,
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
 
-  .steps {
-    margin-top: 0;
-  }
+    .steps {
+        margin-top: 0;
+    }
 
-  .step-title {
-    font-size: 1.125rem;
-  }
+    .step-title {
+        font-size: 1.125rem;
+    }
 
-  .quote {
-    font-size: 1.125rem;
-  }
+    .quote {
+        font-size: 1.125rem;
+    }
 
-  .testimonial-btn {
-    width: 80%;
-    height: 50px;
-  }
+    .testimonial-btn {
+        width: 80%;
+        height: 50px;
+    }
 
-  .faq-title {
-    font-size: 1.25rem;
-  }
+    .faq-title {
+        font-size: 1.25rem;
+    }
 
-  .faq-toggle {
-    font-size: 1.25rem;
-  }
+    .faq-toggle {
+        font-size: 1.25rem;
+    }
 
-  .footer {
-    font-size: 0.75rem;
-  }
+    .footer {
+        font-size: 0.75rem;
+    }
 }
